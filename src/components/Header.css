@@ -11,4 +11,13 @@
           align-items: center;
   padding: 1rem 0.8rem;
 }
+
+.header a {
+  text-decoration: none;
+  color: unset;
+}
+
+.header a:hover {
+  color: unset;
+}
 /*# sourceMappingURL=Header.css.map */

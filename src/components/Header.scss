@@ -6,4 +6,11 @@
     align-items: center;
     padding: 1rem 0.8rem;
   }
+  a {
+    text-decoration: none;
+    color: unset;
+    &:hover {
+      color: unset;
+    }
+  }
 }
