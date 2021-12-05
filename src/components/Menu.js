@@ -2,7 +2,7 @@ import "./Menu.scss";
 
 function Menu() {
 
-  const menuItems = ["item1", "item2", "item2"];
+  const menuItems = ["item1", "item2", "item3"];
 
   function returnMenuItems() {
     return (
