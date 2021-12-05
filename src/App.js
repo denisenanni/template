@@ -2,7 +2,7 @@ import "./App.scss";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent.js";
 import { isMobile } from "react-device-detect";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 function App() {
   return (
