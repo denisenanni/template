@@ -1,0 +1,37 @@
+@import "./scss/variables.scss";
+@import "./scss/commons.scss";
+.app {
+  text-align: left;
+  height: 100vh;
+  font-family: "Roboto Mono", monospace;
+  .app.row {
+    //if mobile flex-direction: column; + max-height on columns
+    height: 100%;
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      &.header-section {
+        background-color: $light-grey;
+      }
+      &.content-section {
+        background-color: $light-yellow;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
