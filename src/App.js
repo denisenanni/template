@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent.js";
+import { isMobile } from 'react-device-detect';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app container-fluid">
+      <div className={`app row ${isMobile ? 'd-flex flex-column' : ''}`} >
+        <div className={`header-section col col-sm-3 col-md-3 col-lg-3 col-xl-3 ${isMobile ? 'max-h-10' : ''}`}>
+          <Header></Header>
+        </div>
+        <div className="content-section col col-sm-9 col-md-9 col-lg-9 col-xl-9">
+          <MainContent></MainContent>
+        </div>
+      </div>
     </div>
   );
 }
