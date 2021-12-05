@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [17.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -31,7 +31,7 @@ jobs:
       run: npm test
 
     - name: Build
-      run: SET NODE_OPTIONS=--openssl-legacy-provider && npm run build
+      run: npm run build
     
     - name: Deploy your app to GitHub Pages
       uses: awb-pw/deploy-to-github-pages-action@1.1.1
